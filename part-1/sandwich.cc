@@ -21,4 +21,5 @@ int main(int argc, char* argv[]) {
   std::cout << "Your order: "
             << "A " << protein << " sandwich "
             << "on " << bread << " with " << condiment << std::endl;
+  return 0;
 }
