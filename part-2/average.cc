@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
   double sum = 0.0;
   int count = 0;
   for (int i = 1; i < arguments.size(); i++) {
-    sum += arguments[1] ;
+    sum += arguments[i] ;
     count++;
   }
 
