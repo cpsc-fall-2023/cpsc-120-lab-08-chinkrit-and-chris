@@ -11,7 +11,7 @@
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
 
-  if (arguments.size() < 1 ) {
+  if (arguments.size() < 1) {
     std::cout << "error: you must supply at least one number";
     return -1;
   }
@@ -40,7 +40,7 @@ int main(int argc, char* argv[]) {
   double avg = 0.0;
 
   if (sum > 0) {
-    avg = (double) sum / count;
+    avg = (double)sum / count;
   }
 
   // TODO: Use cout to print out a message of the form
