@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     avg = (double)sum / count;
   }
 
-  std::cout << "\naverage = " << avg  << std::endl;
+  std::cout << "\naverage = " << avg << std::endl;
 
   return 0;
 }
