@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 
   for (int i = 1; i < arguments.size(); i++) {
     double argument = std::stod(arguments[i]);
-    double sum += argument;
+    sum += argument;
     count++;
   }
 
