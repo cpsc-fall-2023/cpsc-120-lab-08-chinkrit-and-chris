@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
   double avg = 0.0;
 
   if (sum != 0) {
-    avg = (double)sum / count;
+    avg = sum / count;
   }
 
   std::cout << "\naverage = " << avg << std::endl;
