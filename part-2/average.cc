@@ -29,6 +29,9 @@ int main(int argc, char* argv[]) {
 
   if (sum != 0) {
     avg = sum / count;
+  } else {
+    std::cout << "error: you must supply at least one number" << std::endl;
+    return -1;
   }
 
   std::cout << "\naverage = " << avg << std::endl;
