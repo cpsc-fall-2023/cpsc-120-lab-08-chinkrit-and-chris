@@ -11,7 +11,7 @@
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
 
-  if (arguments.empty() || argument[1] == 0) {
+  if (arguments.empty()) {
     std::cout << "error: you must supply at least one number" << std::endl;
     return -1;
   }
