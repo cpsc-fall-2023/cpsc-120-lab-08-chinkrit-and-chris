@@ -17,19 +17,19 @@ int main(int argc, char* argv[]) {
   }
 
   double sum = 0.0;
-  int count = 0;
+  bool first = true;
 
-  for (int i = 1; i < arguments.size(); i++) {
-    double argument = std::stod(arguments[i]);
-    sum += argument;
-    count++;
+  for (std::string& argument : arguments) {
+    if (first) {
+      first = false;
+    } else {
+      double number = std::stod(argument);
+      sum += number;
+    }
   }
 
   double avg = 0.0;
-
-  if (sum != 0) {
-    avg = sum / count;
-  }
+  avg = sum / (static_cast<int>(arguments.size()) - 1);
 
   std::cout << "\naverage = " << avg << std::endl;
 
