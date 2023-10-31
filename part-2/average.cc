@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
   double sum = 0.0;
   int count = 0;
 
-  for (int i = 1; i < arguments.size(); i++) {
+  for (int i + 1 : arguments) {
     double argument = std::stod(arguments[i]);
     sum += argument;
     count++;
